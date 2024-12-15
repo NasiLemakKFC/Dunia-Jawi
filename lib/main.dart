@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jawi_app/page/Dunia_1/aras1.dart';
-import 'package:jawi_app/page/Dunia_1/level_layout.dart';
-import 'package:jawi_app/page/Dunia_1/result.dart';
 import 'package:jawi_app/page/MainPage.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -23,7 +20,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: MainPage(),
     );
   }

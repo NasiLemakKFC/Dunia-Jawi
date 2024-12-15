@@ -38,6 +38,7 @@ dependencies:
   supabase_flutter: ^2.8.1
   just_audio: ^0.9.42
   google_fonts: ^6.2.1
+  outlined_text: ^1.0.1
 
 dev_dependencies:
   flutter_test:

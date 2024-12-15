@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jawi_app/page/loadpage.dart';
+import 'package:jawi_app/page/Dunia_1/level_layout.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+class LoadingPage extends StatelessWidget {
+  const LoadingPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,14 +13,14 @@ class MainPage extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const LoadingPage(), // Replace with your next page widget
+              builder: (context) => const LevelDunia1(), // Replace with your next page widget
             ),
           );
         },
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('asset/image/MainPage.png'), // Replace with your image path
+              image: AssetImage('asset/image/Loading.png'), // Replace with your image path
               fit: BoxFit.cover, // Ensures the image covers the entire screen
             ),
           ),
