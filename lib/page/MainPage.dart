@@ -13,15 +13,15 @@ class MainPage extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const LoadingPage(), // Replace with your next page widget
+              builder: (context) => const LoadingPage(), 
             ),
           );
         },
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('asset/image/MainPage.png'), // Replace with your image path
-              fit: BoxFit.cover, // Ensures the image covers the entire screen
+              image: AssetImage('asset/image/MainPage.png'), 
+              fit: BoxFit.cover,
             ),
           ),
         ),

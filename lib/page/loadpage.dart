@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jawi_app/page/Dunia_1/level_layout.dart';
+import 'package:jawi_app/page/menu.dart';
 
 class LoadingPage extends StatelessWidget {
   const LoadingPage({super.key});
@@ -13,14 +13,16 @@ class LoadingPage extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => const LevelDunia1(), // Replace with your next page widget
+              builder: (context) =>
+                  const PlanetSelection(), // Replace with your next page widget
             ),
           );
         },
         child: Container(
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('asset/image/Loading.png'), // Replace with your image path
+              image: AssetImage(
+                  'asset/image/Loading.png'), // Replace with your image path
               fit: BoxFit.cover, // Ensures the image covers the entire screen
             ),
           ),
